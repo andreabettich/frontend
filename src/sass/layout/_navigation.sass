@@ -9,7 +9,6 @@ $search-icon-color: $color-white
 .navigation
   width: 100%
   background-color: $navigation-bgcolor
-
   &__nav
     padding: 37px 100px
     height: 32px
@@ -41,6 +40,18 @@ $search-icon-color: $color-white
   &__search
     padding-left: 26px
     color: $search-icon-color
+    &__box
+      background-color: $navigation-bgcolor
+      padding: 1rem
+      display: block
+      position: absolute
+      top: 106px
+      right: 0
+      button, input
+        background-color: $color-white
+        color: $navigation-bgcolor
+        border: 0
+        padding: 0.85rem 1rem
   .menu
     margin-left: auto
     display: flex
