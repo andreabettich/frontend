@@ -3,6 +3,8 @@ $navigation-bgcolor: $color-alpha
 $navigation-divider-color: $color-white
 $menu-item-color: $color-white
 $language-item-color: $color-white
+$language-icon-color: $color-white
+$search-icon-color: $color-white
 
 .navigation
   width: 100%
@@ -22,15 +24,23 @@ $language-item-color: $color-white
     border: solid 1px $navigation-divider-color
 
   &__language
+    display: flex
+    align-items: baseline
+    padding-left: 28px
     .language
       list-style: none
+      padding-right: 5px
       &__item
         color: $language-item-color
         display: none
         &--active
           display: block
+      &__icon
+        color: $language-icon-color
 
   &__search
+    padding-left: 26px
+    color: $search-icon-color
   .menu
     margin-left: auto
     display: flex
