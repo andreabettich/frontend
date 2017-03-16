@@ -2,9 +2,12 @@
 $navigation-bgcolor: $color-alpha
 $navigation-divider-color: $color-white
 $menu-item-color: $color-white
+$menu-item-color-hover: smart-scale($color-alpha, -10%)
 $language-item-color: $color-white
 $language-item-bgcolor: $color-alpha
 $search-icon-color: $color-white
+$search-box-bgcolor: $color-alpha
+$search-box-element-bgcolor: $color-white
 
 .navigation
   width: 100%
@@ -31,7 +34,7 @@ $search-icon-color: $color-white
     padding-left: 26px
     color: $search-icon-color
     &__box
-      background-color: $navigation-bgcolor
+      background-color: $search-box-bgcolor
       padding: 1rem 1rem
       visibility: hidden
       position: absolute
@@ -40,7 +43,7 @@ $search-icon-color: $color-white
       top: 3rem
       right: 0
       button, input
-        background-color: $color-white
+        background-color: $search-box-element-bgcolor
         color: $navigation-bgcolor
         border: 0
         padding: 0.85rem 1rem
@@ -79,7 +82,7 @@ $search-icon-color: $color-white
         &__item
           padding: 1rem 2rem
           &:hover
-            background-color: smart-scale($color-alpha, -10%)
+            background-color: $menu-item-color-hover
       .language__toggle
         display: none
         &:checked + .language
